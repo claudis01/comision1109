@@ -69,11 +69,11 @@ const comprarTicket =()=>{
             <div class="row">
                 <div class="col">
                     <label for="">Cantidad</label>
-                    <input id="cantidadEntradas" type="text" class="form-control" value = "1" onChange="imprimirValor()" placeholder="Cantidad"/>
+                    <input id="cantidadEntradas" type="text" class="form-control" value = "1" placeholder="Cantidad"/>
                 </div>
                 <div class="col">
                 <label for="">Categoria</label>
-                <select class="form-select" id = "id_categoria"  name="id_categoria" onChange="imprimirValor()">
+                <select class="form-select" id = "id_categoria"  name="id_categoria" >
                     <option value="80">Estudiante</option>
                     <option value="50">Trainee</option>
                     <option value="15">Junior</option>
@@ -86,13 +86,13 @@ const comprarTicket =()=>{
                 
         <div class="form-row"> 
             <div class="alert alert-primary total_a_pagar" role="alert">
-            <label id="label_cant_pagar" >Cantidad a pagar: $40</label>
+            <label id="label_cant_pagar" >Cantidad a pagar: $</label>
             </div>
         </div>
                     
         <div class="form-row d-flex">
             <button class="btn btn-lg btn-primary col-6 m-1">Borrar</button>
-            <button class="btn btn-lg btn-primary col-6 m-1" onclick="Totalapagar()">Resumen</button>        
+            <button class="btn btn-lg btn-primary col-6 m-1" onclick="imprimirValor()">Resumen</button>        
         </div>
             
     </div>`;
